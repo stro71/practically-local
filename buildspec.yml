@@ -7,6 +7,8 @@ phases:
       - npm install
       - apt-get update
       - apt-get install -y awscli
+    runtime-versions:
+      nodejs: 8
 
   build: 
     commands:
@@ -14,4 +16,4 @@ phases:
 
   post_build: 
     commands:
-      - aws s3 sync . s3://stark-international-inc-2019/
+      - cd public/ && aws s3 sync . s3://stark-international-inc-2019/
