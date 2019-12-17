@@ -8,7 +8,7 @@ phases:
       - apt-get update
       - apt-get install -y awscli
     runtime-versions:
-      nodejs: 8
+      nodejs: 10.1.0 
 
   build: 
     commands:
