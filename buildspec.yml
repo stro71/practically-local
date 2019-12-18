@@ -13,6 +13,9 @@ phases:
   build: 
     commands:
       - hexo generate
+  artifacts:
+    files:
+      - '**/*'
 
   post_build: 
     commands:
